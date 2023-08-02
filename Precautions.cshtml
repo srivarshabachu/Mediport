@@ -1,0 +1,163 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@using Mediport.Models;
+@model BasicInstructions;
+@{
+    ViewData["Title"] = "Precautions";
+    
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    .container {
+    padding: 2rem;
+    }
+
+    /* CSS */
+    .button-51 {
+    background-color: transparent;
+    border: 1px solid #266db6;
+    box-sizing: border-box;
+    color: #00132c;
+    font-family: "Avenir Next LT W01 Bold", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 16px 23px;
+    position: relative;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    }
+    .card{
+        width:auto;
+        height:600px;
+    }
+    .button-51:hover,
+    .button-51:active {
+    outline: 0;
+    }
+
+    .button-51:hover {
+    background-color: transparent;
+    cursor: pointer;
+    }
+
+    .button-51:before {
+    background-color: #d5edf6;
+    content: "";
+    height: calc(100% + 3px);
+    position: absolute;
+    right: -7px;
+    top: -9px;
+    transition: background-color 300ms ease-in;
+    width: 100%;
+    z-index: -1;
+    }
+
+    .button-51:hover {
+    background-color: #e74646;
+    opacity: 0.85;
+    }
+    }
+    </style>
+</head>
+<body>
+    @using (Html.BeginForm(FormMethod.Post)){
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                        <img src="https://www.hsph.harvard.edu/nutritionsource/wp-content/uploads/sites/30/2016/04/CVD_NSHomepageWidget.jpg"
+                         class="card-img-top"
+                         alt="..." />
+                    <div class="card-body">
+                            <h5 class="card-title">Heart Disease</h5>
+                        <p class="card-text">
+                            <ul>
+                                         <li>Don't smoke or Use Tobacco</li>
+                                         <li> 2. 30 to 60 minutes of activity daily</li>
+                                         <li>3. Eat a heart-healthy diet</li>
+                                         <li> 4. Maintain a healthy weight</li>
+                                         <li>5. Get good quality sleep</li>
+                                         <li>6. Manage stress</li>
+                                         <li>7. Get regular health screenings</li>
+                                    
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                        <img src="https://www.lalpathlabs.com/blog/wp-content/uploads/2018/05/Enough-About-Diabetes.jpg"
+                         class="card-img-top"
+                         alt="..." />
+                    <div class="card-body">
+                            <h5 class="card-title">Diabetes </h5>
+                        <p class="card-text">
+                            <ul>
+                                <li> Make a commitment to managing your diabetes </li>
+                                <li>Don't smoke </li>
+                                <li>Keep your blood pressure and cholesterol under control</li>
+                                <li>Schedule regular physicals and eye exams</li>
+                                    <li>Keep your vaccines up to date</li>
+                                    <li>Take care of your teeth</li>
+                                    <li>Pay attention to your feet</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                        <img src="https://cdn1.vectorstock.com/i/1000x1000/02/35/fight-against-breast-cancer-campaign-vector-6070235.jpg"
+                         class="card-img-top"
+                         alt="..." />
+                    <div class="card-body">
+                            <h5 class="card-title">Cancer</h5>
+                        <p class="card-text">
+                           <ul>
+                                    <li>Don't use tobacco</li>
+                                    <li>Eat a healthy diet</li>
+                                    <li>Maintain a healthy weight and be physically active</li>
+                                    <li>Protect yourself from the sun</li>
+                                    <li>Get vaccinated</li>
+                                    <li>Avoid risky behaviors</li>
+                                    <li>Get regular medical care</li>
+                           </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="https://media.cntraveler.com/photos/5ad4b18f37d53014748b719e/1:1/w_3270,h_3270,c_limit/GettyImages-491934882.jpg"
+                             class="card-img-top"
+                             alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Asthma</h5>
+                            <p class="card-text">
+                                <ul>
+                                    <li>Identify Asthma Triggers</li>
+                                    <li>Stay Away From Allergens</li>
+                                    <li>Avoid Smoke of Any Type</li>
+                                    <li>Prevent Colds</li>
+                                    <li>Consider Immunotherapy Allergy Shots</li>
+                                    <li>Allergy-Proof Your Home</li>
+                                    <li>Get regular medical care</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    }
+</body>
+</html>
